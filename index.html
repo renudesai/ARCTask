@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>ARC - Arena Racing Company</title>
+  </head>
+  <body>
+    <main class="container" id="data-container">
+      <header class="header">
+        <h1>Events for you</h1>
+        <p>We think you will love these</p>
+      </header>
+      <section id="month-container" class="month-container">
+        <form action="/action_page.php">
+          <label for="month">Check events for other months</label>
+          <select name="month" id="month" onchange="handleChange()">
+            <option value="1">Janauary</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+        </form>
+      </section>
+      <section id="cards-container" class="grid"></section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
