@@ -73,11 +73,11 @@ function displayEvents(data) {
 
     const extractedText = tempContainer.textContent;
 
-    const parser = new DOMParser();
-    const parsedDescription = parser.parseFromString(
-      extractedText,
-      "text/html"
-    );
+    // const parser = new DOMParser();
+    // const parsedDescription = parser.parseFromString(
+    //   extractedText,
+    //   "text/html"
+    // );
 
     var row = `
       <article>
